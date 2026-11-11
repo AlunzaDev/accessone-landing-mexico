@@ -2,6 +2,7 @@ import Header from './Header';
 import Footer from './Footer';
 import { CountUp, ServiceCard, type IconName } from '@alunzadev/accessone-ui';
 import '@alunzadev/accessone-ui/styles/service-card.css';
+import '@alunzadev/accessone-ui/styles/landing.css';
 import './landing.css';
 import '@alunzadev/accessone-ui/styles/glass.css';
 
