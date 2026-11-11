@@ -5,8 +5,8 @@ export const brand: LandingBrandConfig = {
   region: 'México',
   locale: 'es-MX',
   logos: {
-    onLight: '/accessone-mexico.jpg',
-    onDark: '/accessone-mexico.jpg',
+    onLight: '/accessone-mexico-horizontal-dark.png',
+    onDark: '/accessone-mexico-horizontal-light.png',
   },
 };
 
