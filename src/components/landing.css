@@ -329,3 +329,4 @@ input,select,textarea,button{min-width:0}
 .footer-socials a{width:40px;height:40px;display:grid;place-items:center;border:1px solid #ffffff4d;border-radius:50%;color:#fff;text-decoration:none;transition:border-color .2s ease,color .2s ease,transform .2s ease}
 .footer-socials a:hover,.footer-socials a:focus-visible{border-color:var(--cyan);color:var(--cyan);transform:translateY(-2px);outline:none}
 .footer-socials svg{width:19px;height:19px;fill:currentColor}
+

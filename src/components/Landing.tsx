@@ -3,6 +3,7 @@ import Footer from './Footer';
 import { CountUp, ServiceCard, type IconName } from '@alunzadev/accessone-ui';
 import '@alunzadev/accessone-ui/styles/service-card.css';
 import './landing.css';
+import '@alunzadev/accessone-ui/styles/glass.css';
 
 function MetricValue({ value }: { value: string }) {
   const match = value.match(/^(\D*)([\d,]+)(.*)$/);
