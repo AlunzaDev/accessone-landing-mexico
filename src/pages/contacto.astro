@@ -1,0 +1,27 @@
+---
+import InteriorLayout from '../layouts/InteriorLayout.astro';
+import ContactForm from '../components/ContactForm';
+import Icon from '../components/Icon';
+---
+<InteriorLayout title="Contacto | AccessOne México" description="Hablemos sobre la operación, tecnología y mantenimiento de tu estacionamiento en México.">
+  <section class="page-hero contact-hero"><p class="tag">Contacto</p><h1>Tu siguiente proyecto empieza aquí.</h1><p>Cuéntanos cómo podemos mejorar la operación y experiencia de tu estacionamiento en México.</p></section>
+  <section class="contact-directory" aria-labelledby="contact-directory-title">
+    <div class="directory-heading">
+      <div class="directory-heading-title">
+        <p class="tag">AccessOne México</p>
+        <h2 id="contact-directory-title">Estamos para apoyarte.</h2>
+      </div>
+      <div class="directory-heading-copy">
+        <span aria-hidden="true"></span>
+        <p>Conoce nuestros canales de atención y conversemos sobre las necesidades de tu proyecto.</p>
+      </div>
+    </div>
+    <div class="directory-grid">
+      <article><span aria-hidden="true"><Icon name="mail" className="contact-icon" /></span><p>Correo electrónico</p><a href="mailto:contacto@accessone.com.mx">contacto@accessone.com.mx</a><small>Atención comercial</small></article>
+      <article><span aria-hidden="true"><Icon name="phone" className="contact-icon" /></span><p>Teléfono</p><a href="tel:+524433333330">+52 443 333 3330</a><small>Morelia y República Mexicana</small></article>
+      <article><span aria-hidden="true"><Icon name="location" className="contact-icon" /></span><p>Ubicación</p><strong>Morelia, Michoacán</strong><small>Santiago de Xicoténcatl 371, Chapultepec Norte</small></article>
+      <article><span aria-hidden="true"><Icon name="clock" className="contact-icon" /></span><p>Horario de atención</p><strong>Lunes a viernes · 9:30 a 18:30</strong><small>Horario publicado</small></article>
+    </div>
+  </section>
+  <section class="contact-form-section"><ContactForm client:load /></section>
+</InteriorLayout>

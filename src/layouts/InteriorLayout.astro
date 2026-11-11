@@ -1,0 +1,16 @@
+---
+import Layout from './Layout.astro';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import '../components/landing.css';
+
+interface Props { title: string; description: string }
+const { title, description } = Astro.props;
+---
+<Layout title={title} description={description}>
+  <div class="shell interior-shell">
+    <Header client:load />
+    <main><slot /></main>
+    <Footer />
+  </div>
+</Layout>
