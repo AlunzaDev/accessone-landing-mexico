@@ -2,10 +2,12 @@
 import InteriorLayout from '../layouts/InteriorLayout.astro';
 import {
   CountUp,
+  MediaGallery,
   ServiceCatalog,
   type IconName,
 } from '@alunzadev/accessone-ui';
 import '@alunzadev/accessone-ui/styles/service-catalog.css';
+import '@alunzadev/accessone-ui/styles/media.css';
 const services: { icon: IconName; title: string; text: string; items?: string[] }[] = [
   { icon: 'access', title: 'Control de accesos y salidas', text: 'Sistemas para gestionar el ingreso y egreso de vehículos con tecnología de vanguardia, aprovechando mejor cada ubicación y manteniendo el control de las áreas de circulación.' },
   { icon: 'maintenance', title: 'Mantenimiento', text: 'Programas preventivos y correctivos para mantener cada estacionamiento en condiciones óptimas.', items: ['Guarniciones y señalización', 'Demarcación y pintura', 'Bacheo preventivo', 'Cambio de luminarias'] },
@@ -30,5 +32,16 @@ const services: { icon: IconName; title: string; text: string; items?: string[] 
     </div>
   </section>
   <section class="solutions services-catalog"><ServiceCatalog client:load ctaLabel="Cuéntanos sobre tu proyecto" services={services.map(({ text, ...service }) => ({ ...service, description: text }))} /></section>
+  <!-- TODO media: fotos de servicios -->
+  <section class="accessone-media-section" aria-labelledby="services-gallery-title">
+    <div class="accessone-media-section__heading"><div><p class="tag">En campo</p><h2 id="services-gallery-title">Nuestros servicios, en acción.</h2></div></div>
+    <MediaGallery items={[
+      { label: 'Operación de estacionamiento', hint: 'Foto amplia' },
+      { label: 'Autolavado' },
+      { label: 'Limpieza' },
+      { label: 'Asistencia al usuario' },
+      { label: 'Taquillas y torniquetes' },
+    ]} />
+  </section>
   <section class="service-proof"><p class="tag">Presencia nacional</p><strong><CountUp client:load value={30000} prefix="+" /></strong><h2>espacios de estacionamiento</h2><p>Experiencia desarrollada en México en estacionamientos, hospitales, clubes deportivos, exposiciones y centros comerciales de la República Mexicana.</p><a href="/contacto">Cuéntanos sobre tu proyecto <b>↗</b></a></section>
 </InteriorLayout>

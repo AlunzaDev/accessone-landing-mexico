@@ -1,8 +1,15 @@
 ---
 import InteriorLayout from '../layouts/InteriorLayout.astro';
 import IdentityTabs from '../components/IdentityTabs';
+import { MediaPlaceholder } from '@alunzadev/accessone-ui';
+import '@alunzadev/accessone-ui/styles/media.css';
 ---
 <InteriorLayout title="Nosotros | AccessOne México" description="Conoce la visión y experiencia de AccessOne Parking México.">
   <IdentityTabs client:load />
   <section class="intro"><h2>El estacionamiento no es el final del trayecto.<br/><em>Es el inicio de la experiencia.</em></h2><p>Integramos estrategia, infraestructura y atención para que cada espacio funcione con orden y proyecte confianza.</p></section>
+  <!-- TODO media: video #2 — equipo / historia (16:9) -->
+  <section class="accessone-media-section accessone-media-section--navy" aria-labelledby="about-video-title">
+    <div class="accessone-media-section__heading"><div><p class="tag">Nuestra gente</p><h2 id="about-video-title">Más de 35 años, contados por quienes los hacen posibles.</h2></div><p>Testimonios del equipo y la historia de AccessOne.</p></div>
+    <MediaPlaceholder kind="video" label="Video de equipo / historia" hint="16:9 · 1–2 min" />
+  </section>
 </InteriorLayout>
