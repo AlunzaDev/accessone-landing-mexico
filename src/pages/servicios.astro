@@ -1,18 +1,16 @@
 ---
 import InteriorLayout from '../layouts/InteriorLayout.astro';
 import {
-  CountUp,
   MediaGallery,
   ServiceCatalog,
   type IconName,
 } from '@alunzadev/accessone-ui';
+import CountUp from '../components/CountUp';
 import '@alunzadev/accessone-ui/styles/service-catalog.css';
 import '@alunzadev/accessone-ui/styles/media.css';
 const services: { icon: IconName; title: string; text: string; items?: string[] }[] = [
   { icon: 'access', title: 'Control de accesos y salidas', text: 'Sistemas para gestionar el ingreso y egreso de vehículos con tecnología de vanguardia, aprovechando mejor cada ubicación y manteniendo el control de las áreas de circulación.' },
   { icon: 'maintenance', title: 'Mantenimiento', text: 'Programas preventivos y correctivos para mantener cada estacionamiento en condiciones óptimas.', items: ['Guarniciones y señalización', 'Demarcación y pintura', 'Bacheo preventivo', 'Cambio de luminarias'] },
-  { icon: 'wash', title: 'Autolavado', text: 'Espacios para lavado profesional con personal capacitado y equipo de primer nivel: mayor comodidad para los visitantes y una nueva oportunidad de ingreso.' },
-  { icon: 'valet', title: 'Valet parking', text: 'Recepción y entrega ágil de vehículos con operadores capacitados, supervisión, control mediante inventarios e imagen profesional.', items: ['Personal con licencia y pruebas de manejo', 'Señalización y módulos identificados', 'Equipo de intercomunicación y apoyo vial'] },
   { icon: 'support', title: 'Asistencia y emergencias', text: 'Apoyo discreto a los usuarios ante situaciones imprevistas dentro del estacionamiento.', items: ['Carga de baterías', 'Revisión de niveles básicos', 'Contacto con cerrajero 24 horas', 'Asistencia médica de emergencia'] },
   { icon: 'ticket', title: 'Taquillas y accesos', text: 'Control de acceso de personas para parques recreativos, cines, ferias y otras instalaciones mediante torniquetes inteligentes y validación de tickets.' },
   { icon: 'clean', title: 'Limpieza', text: 'Personal calificado para mantener las instalaciones en condiciones óptimas de limpieza, funcionamiento y presentación durante la operación.' },
@@ -37,7 +35,6 @@ const services: { icon: IconName; title: string; text: string; items?: string[] 
     <div class="accessone-media-section__heading"><div><p class="tag">En campo</p><h2 id="services-gallery-title">Nuestros servicios, en acción.</h2></div></div>
     <MediaGallery items={[
       { label: 'Operación de estacionamiento', hint: 'Foto amplia' },
-      { label: 'Autolavado' },
       { label: 'Limpieza' },
       { label: 'Asistencia al usuario' },
       { label: 'Taquillas y torniquetes' },

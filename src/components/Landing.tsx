@@ -1,6 +1,7 @@
 import Header from './Header';
 import Footer from './Footer';
-import { CountUp, MediaGallery, MediaPlaceholder, ServiceCard, type IconName } from '@alunzadev/accessone-ui';
+import { MediaGallery, MediaPlaceholder, ServiceCard, type IconName } from '@alunzadev/accessone-ui';
+import CountUp from './CountUp';
 import '@alunzadev/accessone-ui/styles/media.css';
 import '@alunzadev/accessone-ui/styles/service-card.css';
 import '@alunzadev/accessone-ui/styles/landing.css';
@@ -26,7 +27,6 @@ const mexicoMetrics = [
 const homeServices: [IconName, string, string][] = [
   ['access', 'Control de accesos', 'Tecnología y procesos para ordenar el ingreso y salida de vehículos.'],
   ['parking', 'Operación de estacionamientos', 'Administración profesional enfocada en eficiencia, seguridad y servicio.'],
-  ['valet', 'Valet parking', 'Recepción y entrega de vehículos con personal capacitado y control operativo.'],
   ['maintenance', 'Mantenimiento', 'Programas preventivos y correctivos para conservar cada espacio en buen estado.'],
   ['support', 'Servicios al usuario', 'Limpieza, asistencia básica, apoyo vial y atención dentro del estacionamiento.'],
   ['design', 'Diseño y equipamiento', 'Conceptualización, obra e integración de equipos de control de acceso.'],
@@ -50,7 +50,7 @@ export default function Landing() {
       </section>
       {/* TODO media: video #1 — reel de operación (16:9) */}
       <section className="accessone-media-section accessone-media-section--navy" aria-labelledby="home-video-title">
-        <div className="accessone-media-section__heading"><div><p className="tag">AccessOne en operación</p><h2 id="home-video-title">Así se ve una operación que funciona.</h2></div><p>Un recorrido por nuestros estacionamientos: accesos, valet, tecnología y equipo en acción.</p></div>
+        <div className="accessone-media-section__heading"><div><p className="tag">AccessOne en operación</p><h2 id="home-video-title">Así se ve una operación que funciona.</h2></div><p>Un recorrido por nuestros estacionamientos: accesos, tecnología y equipo en acción.</p></div>
         <MediaPlaceholder kind="video" label="Video institucional / reel de operación" hint="16:9 · 60–90 s · MP4 o YouTube/Vimeo" />
       </section>
       <section className="home-services" aria-labelledby="home-services-title">
@@ -63,7 +63,6 @@ export default function Landing() {
         <MediaGallery items={[
           { label: 'Proyecto destacado', hint: 'Foto principal · horizontal' },
           { label: 'Control de accesos', hint: 'Barreras / casetas' },
-          { label: 'Valet parking', hint: 'Equipo en servicio' },
           { label: 'Mantenimiento', hint: 'Señalización y pintura' },
           { label: 'Tecnología', hint: 'Equipos y taquillas' },
         ]} />
