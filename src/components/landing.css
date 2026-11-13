@@ -1,2 +1,26 @@
 /* Ajustes locales de AccessOne México.
  * La base vive en @alunzadev/accessone-ui/styles/landing.css; aquí solo van diferencias de este país. */
+/* Carrusel morfológico de las cinco soluciones */
+@media(min-width:1101px){
+  .home-service-grid{display:flex;align-items:stretch;gap:14px;min-height:350px}
+  .home-service-grid>.accessone-service-card{min-width:0;flex:1 1 0;animation:accessone-card-morph 15s ease-in-out infinite;will-change:flex-grow}
+  .home-service-grid>.accessone-service-card:nth-child(2){animation-delay:-12s}
+  .home-service-grid>.accessone-service-card:nth-child(3){animation-delay:-9s}
+  .home-service-grid>.accessone-service-card:nth-child(4){animation-delay:-6s}
+  .home-service-grid>.accessone-service-card:nth-child(5){animation-delay:-3s}
+  .home-service-grid:hover>.accessone-service-card,
+  .home-service-grid:focus-within>.accessone-service-card{animation:none;flex-grow:1}
+  .home-service-grid>.accessone-service-card:hover,
+  .home-service-grid>.accessone-service-card:focus-visible{flex-grow:2.15}
+}
+@keyframes accessone-card-morph{
+  0%,16%,100%{flex-grow:1}
+  4%,12%{flex-grow:2.15}
+}
+@media(max-width:1100px){
+  .home-service-grid>.accessone-service-card{animation:none}
+}
+@media(prefers-reduced-motion:reduce){
+  .home-service-grid>.accessone-service-card{animation:none!important;transition:none}
+}
+
