@@ -19,9 +19,9 @@ const mexicoMetrics = [
   ['+35', 'años de experiencia'],
   ['+30,000', 'espacios de estacionamiento'],
   ['+300', 'carriles operados'],
-  ['+300', 'colaboradores calificados'],
-  ['+35 M', 'de usuarios atendidos al año'],
-  ['+40', 'proyectos en operación'],
+  ['+470', 'colaboradores calificados'],
+  ['+40 M', 'de boletos vendidos (usuarios atendidos al año)'],
+  ['+60', 'unidades en operación'],
 ];
 
 const homeServices: [IconName, string, string][] = [
