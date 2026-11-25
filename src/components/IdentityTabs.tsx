@@ -10,9 +10,7 @@ const sections: IdentitySection[] = [
     title: 'Misión',
     eyebrow: 'Nuestro propósito',
     content: <>
-      <p>Satisfacer las necesidades de administración y operación de nuestros clientes: centros comerciales, estacionamientos, servicios de valet parking, consumidores de tecnología y equipo de control de acceso de cualquier tipo.</p>
-      <p>Brindar siempre un servicio de calidad, enfocado en proporcionar atención de primer nivel y excelencia, teniendo como objetivo ser rentables y productivos, haciendo del cliente nuestra prioridad.</p>
-      <p>Actuar con dinamismo en la resolución de los retos de los servicios contratados, ajustándonos en todo momento a las peticiones y necesidades de nuestros clientes.</p>
+      <p>Satisfacer las necesidades de nuestros clientes, brindando un servicio de calidad y otorgando total transparencia en la operación y administración de sus estacionamientos, logrando maximizar sus ingresos.</p>
     </>,
   },
   {
@@ -20,17 +18,16 @@ const sections: IdentitySection[] = [
     title: 'Visión',
     eyebrow: 'Hacia dónde vamos',
     content: <>
-      <p>Ser una empresa competitiva a nivel mundial, brindando el mejor servicio de administración y operación de centros comerciales, estacionamientos y valet parking, así como la venta de tecnología para control de acceso.</p>
-      <p>Tener un crecimiento sostenido mediante la búsqueda de la excelencia y la mejora continua, siendo día con día una empresa más productiva y rentable.</p>
+      <p>Ser una empresa competitiva a nivel Latinoamérica, brindando el mejor servicio de administración y operación de estacionamientos, con la mejor tecnología de control y procesos estandarizados, logrando el 100 % de la confianza en nuestros clientes.</p>
     </>,
   },
   {
     id: 'filosofia',
-    title: 'Filosofía',
-    eyebrow: 'Lo que nos sostiene',
+    title: 'Valores',
+    eyebrow: 'Lo que nos guía',
     content: <>
-      <p>Todo el personal de AccessOne debe tener una calidad de vida digna y estabilidad laboral, teniendo siempre sólidos los siguientes valores:</p>
-      <ul><li>Honestidad</li><li>Lealtad</li><li>Responsabilidad</li><li>La familia</li><li>Transparencia</li></ul>
+      <p>Nuestros valores son:</p>
+      <ul><li>Transparencia</li><li>Honestidad</li><li>Lealtad</li><li>Responsabilidad</li><li>Integridad</li><li>Responsabilidad Social</li></ul>
       <p>Valores que AccessOne comparte con todos sus clientes y colaboradores.</p>
     </>,
   },
